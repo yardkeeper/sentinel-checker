@@ -3,8 +3,8 @@ $counter_t=0
 $counter_f=0
 $triger=Get-Content "C:\Windows\SysWOW64\trigger.txt"
 $hostname = Get-WMIObject Win32_ComputerSystem| Select-Object -ExpandProperty Name
-$token="1019846742:AAE_I-M0B4tIGaZo2RhiZyZDbUZZhvCynAs"
-$chat_id="-341602750"
+$token=""
+$chat_id=""
 $log = [System.Diagnostics.EventLog]::SourceExists("Sentinel-Checker")
 
 function telega($token, $chat_id, $message, $hostname) {
